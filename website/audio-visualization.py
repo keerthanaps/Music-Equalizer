@@ -205,15 +205,7 @@ def add_audio(input_video_filename, added_audio_filename, output_filename):
             .run(overwrite_output=True)
     )
 
-if __name__ == '__main__':
-#    args = sys.argv
-#    assert len(args) == 3 or len(args) == 4
-#    assert args[1][-4:] == '.wav' or '.mp3'
-#   assert args[2] in ['0', '1']
-#    assert args[2][-4:] == '.mp4'
-#   assert args[3][-4:] == '.mp4'
-#   assert args[5] in ['0', '1']
-
+def main():
     input_audio = args[1]
 
     if input_audio[1][-4:]=='.mp3':
@@ -222,7 +214,6 @@ if __name__ == '__main__':
         sound.export(wavFile, format = "wav")
     else:
         wavFile = input_audio
-
 
     mono = 0
     no_sound_video_output_filename = "temp.mp4"
