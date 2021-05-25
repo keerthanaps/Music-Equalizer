@@ -205,7 +205,7 @@ def circle_mode(bins0, bins1, save_name, color_changing, circle_width=15):
         camera.snap()
 
     animation = camera.animate()
-    animation.save(save_name, fps=30, writer='ffmpeg')
+    animation.save(save_name, fps=30, dpi=100, codec="libx264", writer='ffmpeg')
     print("time: ", time.time() - start)
     # processing is done at 10fps so processing time is 3x running time
 
@@ -235,15 +235,15 @@ if __name__ == '__main__':
     assert args[2][-4:] == '.mp4'
 #   assert args[3][-4:] == '.mp4'
 #   assert args[5] in ['0', '1']
-    #if args[1][-4:]=='.mp3':
-    #    wavFile = args[1].replace(".mp3",".wav")
-    #else:
-    #    wavFile = args[1]
+
     input_audio = args[1]
 
-    wavFile = "audio.wav"
-    sound = AudioSegment.from_mp3(input_audio)
-    sound.export(wavFile, format = "wav")
+    if args[1][-4:]=='.mp3':
+        wavFile = "audio.wav"
+        sound = AudioSegment.from_mp3(input_audio)
+        sound.export(wavFile, format = "wav")
+    else:
+        wavFile = args[1]
 
 
     mono = 0
