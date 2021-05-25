@@ -121,27 +121,6 @@ def find_points(threshold, horizon):
     return keep
 
 
-def bar_mode(bins, names, save_name):
-    """
-    Makes a bar plot animation.
-    Input: bins      - (number of bins, number of frames) shape array
-           names     - name of each bin
-           save_name - name to save the animation as (must have .mp4 extension)
-    """
-    start = time.time()
-
-    fig = plt.figure()
-    camera = Camera(fig)
-
-    for i in range(bins.shape[1]):
-        plt.bar(names, bins[:, i], color='blue', width=0.4)
-        camera.snap()
-
-    animation = camera.animate()
-    animation.save(save_name, fps=30)
-    print("time: ", time.time() - start)
-
-
 def ratio(a, b):
     """
     Calculates, given the weights of a and b, the "balance point" that can balance them.
@@ -247,12 +226,10 @@ if __name__ == '__main__':
 
     mono = 0
     no_sound_video_output_filename = "temp.mp4"
-    with_sound_video_output_filename = args[2]
+    with_sound_video_output_filename = "output.mp4"
     color_changing = 1
-    if(len(args) == 3):
-        circle_width = 15
-    else:
-        circle_width = int(args[3])
+    circle_width = 15
+
 
     bins0, bins1 = wav_to_bins(wavFile, mono=mono, bin_boundaries=[4, 37, 93, 371])
     circle_mode(bins0, bins1, no_sound_video_output_filename, color_changing=color_changing, circle_width=circle_width)
