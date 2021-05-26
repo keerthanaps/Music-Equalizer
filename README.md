@@ -2,18 +2,20 @@
 # Project Name
 Long Description about project. This project do that. This project is awesome...
 ## Team members
-1. Name [Embed personal github URL]
-2. Name [Embed perosnal github URL]
+1. Adithyan M S [https://github.com/AdithyanMS]
+2. Keerthana P S [https://github.com/keerthanaps]
+3. Neethu S [https://github.com/neethunsr]
 ## Team Id
-Team id here
+BFH/recAASGjiDOzqBnGg/2021
 ## Link to product walkthrough
-[link to video]
+https://drive.google.com/folderview?id=198M0eD62OFH0d51KPLJ8QEmvbKBK10PC
 ## How it Works ?
-1. Step 1
-2. Step 2
+1. Create an account by signing in
+2. Upload audio in mp3 or wav format
+3. Get your video in mp4 format
 ## Libraries used
-Library Name - Version
+
 ## How to configure
-Instructions for setting up project
+The project isn't live as of now. 
 ## How to Run
-Instructions for running
+You can run the python scrpit for getting the video and the website for signing uo and creating account. Instructions for the same are in the video.
