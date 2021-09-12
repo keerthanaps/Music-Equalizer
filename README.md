@@ -16,9 +16,7 @@ https://drive.google.com/folderview?id=198M0eD62OFH0d51KPLJ8QEmvbKBK10PC
 3. Get your video in mp4 format
 ## Libraries used
 flask
-
 Flask-SQLAlchemy
-
 flask-login
 
 matplotlib 3.2.1
