@@ -16,15 +16,23 @@ https://drive.google.com/folderview?id=198M0eD62OFH0d51KPLJ8QEmvbKBK10PC
 3. Get your video in mp4 format
 ## Libraries used
 flask
+
 Flask-SQLAlchemy
+
 flask-login
-python 3.7.5
+
 matplotlib 3.2.1
+
 numpy 1.16.4
+
 scipy 1.5.2
+
 celluloid 0.2.0
+
 ffmpeg-python 1.2.0
+
 ffmpeg 4.2.2
+
 ## How to configure
 The project isn't live as of now. 
 ## How to Run
